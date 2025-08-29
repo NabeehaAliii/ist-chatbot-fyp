@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IST Chatbot Widget</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style_bot.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="chat-container">
+        <div id="chat-header">
+            <h2>IST Assistant</h2>
+            <p>Your friendly guide to IST</p>
+        </div>
+        <div id="chat-messages" role="log">
+            <!-- Initial welcome message from the bot -->
+            <div class="message bot-message">
+                Hello! How can I help you with your questions about the Institute of Space Technology today?
+            </div>
+        </div>
+        <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Ask a question..." aria-label="Your message">
+            <button id="send-button" aria-label="Send message">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <!-- Link to your Firebase config file (this file will be ignored by Git) -->
+    <script src="config_bot.js"></script>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script_bot.js"></script>
+
+</body>
+</html>
