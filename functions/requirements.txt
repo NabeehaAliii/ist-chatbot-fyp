@@ -1,0 +1,5 @@
+firebase_functions~=0.1.0
+firebase-admin==6.*
+numpy==1.*
+sentence-transformers==2.*
+scikit-learn==1.*
